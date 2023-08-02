@@ -1,0 +1,62 @@
+body{
+    background-color: #B8383B;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 45vh;
+    background-color: rgba(255, 255, 255, 0.214);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#countdown{
+    font-size: 9vw;
+}
+
+#start, #reset{
+    background-color: white;
+    color: #B8383B;
+    font-weight:bolder;
+    border-radius: 10px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 30%;
+    cursor: pointer;
+}
+
+#reset{
+    margin-left: 10px;
+    display: none;
+}
+
+.btnContainer{
+    margin-top: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.animateBkgrd{
+    animation: backgroundAnimation 0.5s linear;
+    background-color: #6BAB90;
+}
+
+
+@keyframes backgroundAnimation{
+    from{
+        background-color:#B8383B;
+    }
+    to{
+        background-color:#6BAB90;
+    }
+}
